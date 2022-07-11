@@ -384,7 +384,7 @@ footer a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    transition: 500ms ease-in-out;
+    transition: 200ms ease-in-out;
     border-radius: 25px;
     z-index: 1000;
     background-color: rgb(30, 30, 30);
@@ -423,11 +423,17 @@ footer a {
     margin: 10px;
     align-self: flex-start;
     background-color: #000;
+    color: #fff;
     border: none;
     padding: 7.5px;
     font-size: 0.9rem;
     border-radius: 10px;
     width: 90%;
+}
+
+.signup-popup-form input:focus {
+    outline-color: #F02488;
+    outline-style: solid;
 }
 
 .signup-popup-form button {
@@ -450,7 +456,7 @@ footer a {
     color: rgb(255, 255, 255, 0.75);
 }
 
-.signup-popup-overlay {
+.popup-overlay {
     position: fixed;
     opacity: 0;
     top: 0;
@@ -463,7 +469,7 @@ footer a {
     transition: 500ms ease-in-out;
 }
 
-.signup-popup-overlay.active {
+.popup-overlay.active {
     pointer-events: all;
     opacity: 1;
 }
