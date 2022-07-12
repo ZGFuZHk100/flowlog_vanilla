@@ -188,6 +188,10 @@ main {
     opacity: 0.5;
 }
 
+.intro-features {
+    margin-top: 200px;
+}
+
 .intro-flow, .intro-features h4 {
     text-transform: uppercase;
     margin: 10px;
@@ -379,7 +383,7 @@ footer a {
     margin: 20px 80px;
 }
 
-.signup-popup {
+.signup-login {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -388,38 +392,37 @@ footer a {
     border-radius: 25px;
     z-index: 1000;
     background-color: rgb(30, 30, 30);
-    width: 300px;
+    width: 400px;
     max-width: 75%;
-    box-shadow: rgba(255, 255, 255, 0.24) 3px 3px 8px;
+    box-shadow: rgba(255, 255, 255, 0.24) 0px 0px 8px 8px;
 }
-.signup-popup.active {
+.signup-login.active {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.signup-popup-header {
+.signup-login__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
 
-.signup-popup-close-button {
-    font-size: 1.5rem;
+.signup-login__header__close-btn {
     cursor: pointer;
 }
 
-.signup-popup-body {
+.signup-login__body {
     padding: 20px;
 }
 
-.signup-popup-form {
+.signup-login__body__form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.signup-popup-form input {
+.signup-login__body__form input {
     margin: 10px;
     align-self: flex-start;
     background-color: #000;
@@ -429,20 +432,20 @@ footer a {
     font-size: 0.9rem;
     border-radius: 10px;
     width: 90%;
+    outline: none;
 }
 
-.signup-popup-form input:focus {
-    outline-color: #F02488;
-    outline-style: solid;
+.signup-login__body__form input:focus {
+    box-shadow: 0 0 3pt 2pt #F02488;
 }
 
-.signup-popup-form button {
+.signup-login__body__form button {
     margin-top: 30px;
-    padding: 7.5px;
+    padding: 10px;
     font-size: 0.75rem;
 }
 
-.signup-popup-login {
+.signup-login__body__switch-txt {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -452,11 +455,11 @@ footer a {
     color: rgb(255, 255, 255, 0.75);
 }
 
-.signup-popup-login-btn {
+.signup-login__body__switch-btn {
     color: rgb(255, 255, 255, 0.75);
 }
 
-.popup-overlay {
+.signup-login-overlay {
     position: fixed;
     opacity: 0;
     top: 0;
@@ -469,7 +472,7 @@ footer a {
     transition: 500ms ease-in-out;
 }
 
-.popup-overlay.active {
+.signup-login-overlay.active {
     pointer-events: all;
     opacity: 1;
 }

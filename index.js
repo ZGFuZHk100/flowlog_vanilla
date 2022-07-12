@@ -1,36 +1,79 @@
-const signupButton = document.querySelectorAll('.js-signup-button');
-const signupPopupCloseButton = document.querySelectorAll('.js-signup-popup-close-button');
-const signupPopupOverlay = document.querySelector('.js-popup-overlay');
+//Signup-Login
+//----------------------------------------------------------------
+const signupLoginOverlay = document.querySelector('.js-signup-login-overlay');
 
-signupButton.forEach(button => {
+//Signup
+//----------------------------------------------------------------
+const signupBtn = document.querySelectorAll('.js-signup-btn');
+const signupCloseBtn = document.querySelectorAll('.js-signup__header__close-btn');
+const signup = document.querySelector('.js-signup');
+
+signupBtn.forEach(button => {
     button.addEventListener('click', () => {
-        const signupPopup = document.querySelector('.js-signup-popup')
-        openSignupPopup(signupPopup);
-        const signupPopupFirstInput = document.getElementById('signup-popup_startup-name');
+        console.log('Click');
+        openSignupPopup(signup);
+        const signupPopupFirstInput = document.getElementById('signup__body__form__startup-name');
         signupPopupFirstInput.focus();
     });
 })
 
-signupPopupCloseButton.forEach(button => {
+signupCloseBtn.forEach(button => {
     button.addEventListener('click', () => {
-        const signupPopup = document.querySelector('.js-signup-popup');
-        closeSignupPopup(signupPopup);
+        const signupPopup = document.querySelector('.js-signup');
+        closeSignupPopup(signup);
     });
 })
 
-signupPopupOverlay.addEventListener('click', () => {
-    const signupPopup = document.querySelector('.js-signup-popup');
-    closeSignupPopup(signupPopup);
+signupLoginOverlay.addEventListener('click', () => {
+    closeSignupPopup(signup);
 });
 
-function openSignupPopup(signupPopup) {
-    if (signupPopup == null) return
-    signupPopup.classList.add('active');
-    signupPopupOverlay.classList.add('active');
+function openSignupPopup(signup) {
+    if (signup == null) return
+    signup.classList.add('active');
+    signupLoginOverlay.classList.add('active');
+    login.classList.remove('active');
 }
 
-function closeSignupPopup(signupPopup) {
-    if (signupPopup == null) return
-    signupPopup.classList.remove('active');
-    signupPopupOverlay.classList.remove('active');
+function closeSignupPopup(signup) {
+    if (signup == null) return
+    signup.classList.remove('active');
+    signupLoginOverlay.classList.remove('active');
+}
+
+//Login
+//----------------------------------------------------------------
+const loginBtn = document.querySelectorAll('.js-login-btn');
+const loginCloseBtn = document.querySelectorAll('.js-login__header__close-btn');
+const login = document.querySelector('.js-login');
+
+loginBtn.forEach(button => {
+    button.addEventListener('click', () => {
+        openLoginPopup(login);
+        const loginPopupFirstInput = document.getElementById('login__body__form__email');
+        loginPopupFirstInput.focus();
+    });
+})
+
+loginCloseBtn.forEach(button => {
+    button.addEventListener('click', () => {
+        closeLoginPopup(login);
+    });
+})
+
+signupLoginOverlay.addEventListener('click', () => {
+    closeSignupPopup(login);
+});
+
+function openLoginPopup(login) {
+    if (login == null) return
+    login.classList.add('active');
+    signupLoginOverlay.classList.add('active');
+    signup.classList.remove('active');
+}
+
+function closeLoginPopup(login) {
+    if (login == null) return
+    login.classList.remove('active');
+    signupLoginOverlay.classList.remove('active');
 }

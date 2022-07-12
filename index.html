@@ -18,7 +18,7 @@
             </div>
     
             <div class="nav-bar">
-                <a class='nav-bar-link' href="#login">
+                <a class='nav-bar-link js-login-btn' href="#login">
                     <i class="fa-solid fa-circle-user fa-2xl"></i>
                 </a>
             </div>
@@ -41,10 +41,10 @@
                     </h1>
     
                     <h5>
-                        Log your activity in a timeline, get easily in the flow and boost your productivity. Unlock incredible perks on the way. Show inevstors your progress.
+                        Log your activity in a timeline, get easily in the flow and boost your productivity. Unlock incredible perks on the way. Show others your progress.
                     </h5>
     
-                    <button class="btn btn-primary-grad js-signup-button">
+                    <button class="btn btn-primary-grad js-signup-btn">
                         Get now in the flow
                     </button>
     
@@ -91,7 +91,7 @@
                 </div>
             </div>
 
-            <button class="btn btn-primary-grad js-signup-button">
+            <button class="btn btn-primary-grad js-signup-btn">
                 Get now in the flow
             </button>
 
@@ -136,54 +136,53 @@
                 </div>
             </div>
 
-            <button class="btn btn-primary-grad js-signup-button">
+            <button class="btn btn-primary-grad js-signup-btn" href="#signup">
                 Get now in the flow
             </button>
         </div>
 
-        <div class="signup-popup js-signup-popup">
-            <div class="signup-popup-header">
-                <h3 class="signup-popup-title">
+        <div class="signup-login js-signup">
+            <div class="signup-login__header">
+                <h3 class="signup-login__header__title">
                     Sign Up
                 </h3>
-                <div class="signup-popup-close-button js-signup-popup-close-button">&times;</div>
+                <div class="signup-login__header__close-btn js-signup__header__close-btn">&times;</div>
             </div>
-            <div class="signup-popup-body">
-                <form class="signup-popup-form" action="">
-                    <input id="signup-popup_startup-name" type="text" placeholder="Your awesome startup name">
-                    <input id="signup-popup_email" type="email" placeholder="Your best email">
-                    <input type="signup-popup_password" placeholder="Your most secure password">
-                    <button class="btn btn-primary-grad" type="submit">Get in the flow</button>
+            <div class="signup-login__body">
+                <form class="signup-login__body__form" action="">
+                    <input class="signup-login__body__form__startup-name" id="signup__body__form__startup-name" type="text" placeholder="Awesome startup name">
+                    <input class="signup-login__body__form__email" id="signup__body__form__email" type="email" placeholder="Best email">
+                    <input class="signup-login__body__form__password" id="signup__body__form__password" type="password" placeholder="Most secure password">
+                    <button class="signup-login__body__form__submit-btn btn btn-primary-grad" type="submit">Get in the flow</button>
                 </form>
-                <div class="signup-popup-login">
+                <div class="signup-login__body__switch-txt">
                     <p>Already have an account?</p> &nbsp
-                    <a class="signup-popup-login-btn" href="#login">Log In</a>
+                    <a class="signup-login__body__switch-btn js-login-btn" href="#login">Log In</a>
                 </div>
             </div>
         </div>
-
-        <!-- <div class="signup-popup js-signup-popup">
-            <div class="signup-popup-header">
-                <h3 class="signup-popup-title">
-                    Sign Up
+        
+        <div class="signup-login js-login">
+            <div class="signup-login__header">
+                <h3 class="signup-login__header__title">
+                    Log In
                 </h3>
-                <div class="signup-popup-close-button js-signup-popup-close-button">&times;</div>
+                <div class="signup-login__header__close-btn js-login__header__close-btn">&times;</div>
             </div>
-            <div class="signup-popup-body">
-                <form class="signup-popup-form" action="">
-                    <input id="signup-popup_startup-name" type="text" placeholder="Your awesome startup name">
-                    <input id="signup-popup_email" type="email" placeholder="Your best email">
-                    <input type="signup-popup_password" placeholder="Your most secure password">
-                    <button class="btn btn-primary-grad" type="submit">Get in the flow</button>
+            <div class="signup-login__body">
+                <form class="signup-login__body__form" action="">
+                    <input class="signup-login__body__form__email" id="login__body__form__email" type="email" placeholder="Email">
+                    <input class="signup-login__body__form__password" id="login__body__form__password" type="password" placeholder="Password">
+                    <button class="signup-login__body__form__submit-btn btn btn-primary-grad" type="submit">Get in the flow</button>
                 </form>
-                <div class="signup-popup-login">
-                    <p>Already have an account?</p> &nbsp
-                    <a class="signup-popup-login-btn" href="#login">Log In</a>
+                <div class="signup-login__body__switch-txt">
+                    <p>Don't have an account yet?</p> &nbsp
+                    <a class="signup-login__body__switch-btn js-signup-btn" href="#signup">Sign Up</a>
                 </div>
             </div>
-        </div> -->
+        </div>
         
-        <div class="popup-overlay js-popup-overlay"></div>
+        <div class="signup-login-overlay js-signup-login-overlay"></div>
     </main>
 
     <footer>
