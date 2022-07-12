@@ -108,8 +108,12 @@ header {
 }
 
 .nav-bar-link {
-    color: #fff;
+    color: rgb(255, 255, 255, 0.75);
     cursor: pointer;
+}
+
+.nav-bar-link:hover {
+    color: rgb(255, 255, 255, 1);
 }
 
 main {
@@ -313,16 +317,20 @@ footer {
 }
 
 footer p {
-    color: #808080;
+    color: rgb(255, 255, 255, 0.5);
     font-size: 14px;
     margin: 10px 0;
 }
 
 footer a {
-    color: #808080;
+    color: rgb(255, 255, 255, 0.5);
     text-decoration: none;
     font-size: 14px;
     margin: 5px 0;
+}
+
+footer a:hover {
+    color: rgb(255, 255, 255);
 }
 
 .company-details {
@@ -335,7 +343,7 @@ footer a {
 }
 
 .futurenation-link:hover {
-    animation: linear-grad 1s forwards;
+    animation: linear-grad 500ms forwards;
 }
 
 @keyframes linear-grad {
