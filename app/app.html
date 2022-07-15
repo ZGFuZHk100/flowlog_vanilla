@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App homepage</title>
+
+    <link rel="stylesheet" href="app.css">
+    <script src="https://kit.fontawesome.com/89e05a32d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header__content">
+            <div class="header__content__logo">
+                <img src="../assets/logo.png" alt="logo"/>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="app">
+            <div id="app__menu">
+                <div class="app__menu__startup-info">
+                    <div class="app__menu__startup-info__logo">
+                        <img src="../assets/logo.png" alt="startup logo"/>
+                    </div>
+                    <div class="app__menu__startup-info__name">
+                        <h3>Startup Name</h3>
+                    </div>
+                </div>
+
+                <div class="app__menu__pages">
+                    <a class="app__menu__pages__link js-app__menu__pages__link" href="/timeline">Timeline</a>
+                    <a class="app__menu__pages__link js-app__menu__pages__link" href="/add-new-dot">Add new dot</a>
+                    <a class="app__menu__pages__link js-app__menu__pages__link" href="/perks">Perks</a>
+                </div>
+
+                <div class="app__menu__general">
+                    <a class="app__menu__general__link js-app__menu__pages__link" href="/guides">Guides</a>
+                    <a class="app__menu__general__link js-app__menu__pages__link" href="/account">Account</a>
+                    <a class="app__menu__general__link js-app__menu__pages__link" href="/settings">Settings</a>
+                </div>
+            </div>
+
+            <div id="app__content"></div>
+
+        </div>
+    </main>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

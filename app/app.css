@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    height: 100%;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+/* 
+----------------------------------------------------------------
+Components
+*/
+.btn {
+    margin: 15px;
+    padding: 15px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary-grad {
+    background-image: linear-gradient(to right, #F02488 0%, #680AB4 16%, #403FD0 33%, #49A9F0  51%, #403FD0 69%, #680AB4 85%, #F02488  100%);
+    transition: 0.75s;
+    background-size: 200% auto;
+    color: #fff;
+}
+
+.btn-primary-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    transform: scale(1.05);
+}
+
+.text-primary-grad {
+    font-style: italic;
+    background: -webkit-linear-gradient(right,#F02488 0%, #680AB4 33%, #403FD0 66%, #49A9F0  100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*
+----------------------------------------------------------------
+Page
+*/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 12vh;
+    background-color: #000;
+    position: fixed;
+    z-index: 100;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    margin: 0 20px;
+}
+
+.header__content__logo {
+    margin: 20px 60px;
+}
+
+.header__content__logo img {
+    height: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#app {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 12vh;
+    overflow: hidden;
+}
+
+#app__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 20%;
+    height: 95%;
+    background-color: rgb(25, 25, 25);
+    box-shadow: rgba(255, 255, 255, 0.24) 0px 0px 6px 6px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.app__menu__startup-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 150px;
+}
+
+.app__menu__startup-info__logo img{
+    height: 50px;
+    border-radius: 50px;
+}
+
+.app__menu__pages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 80%;
+    height: 150px;
+    padding: 10px;
+}
+
+.app__menu__general {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 80%;
+    height: 150px;
+    padding: 10px;
+}
+
+.app__menu__pages a, .app__menu__general a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.25rem;
+    margin: 5px
+}
+
+#app__content {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 75%;
+    height: 95%;
+    background-color: rgb(25, 25, 25);
+    box-shadow: rgba(255, 255, 255, 0.24) 0px 0px 6px 6px;
+    border-radius: 20px;
+    overflow: scroll;
+    padding: 10px;
+}

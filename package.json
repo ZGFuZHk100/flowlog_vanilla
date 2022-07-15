@@ -1,0 +1,23 @@
+{
+  "name": "floex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZGFuZHk100/flowlog_vanilla.git"
+  },
+  "keywords": [],
+  "author": "ZGFuZHk100",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZGFuZHk100/flowlog_vanilla/issues"
+  },
+  "homepage": "https://github.com/ZGFuZHk100/flowlog_vanilla#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
